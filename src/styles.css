@@ -1,0 +1,113 @@
+:root {
+    --color1: #2484d3;
+    --color2: #1e6dad;
+    --color3: #56c596;
+    --color4: #7be495;
+    --color5: #cff4d2;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    /* background: linear-gradient(120deg, lightblue,rgb(202, 221, 235)); */
+    background: whitesmoke;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    background: var(--color1);
+    color: white;
+    width: 100%;
+    height: 10vh;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid var(--color2);
+    margin: 0;
+}
+
+.score {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+}
+
+.score-text {
+    width: 95%;
+}
+
+.question-choice-container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 500px;
+}
+
+.question-container {
+    background: var(--color1);
+    color: white;
+    width: 95%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-bottom: 3px solid var(--color2);
+    border-radius: 10px;
+}
+
+.question {
+    text-align: center;
+    font-size: 1em;
+}
+
+.choice-button,
+.next-question-button,
+.play-again-button {
+    background: white;
+    width: 95%;
+    height: 50px;
+    font-size: 1em;
+    border: 0;
+    border-bottom: 3px solid rgb(187, 185, 185);
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.choice-button:hover,
+.next-question-button:hover,
+.play-again-button:hover {
+    transform: translateY(1px);
+    border-bottom: 2px solid rgb(187, 185, 185);
+}
+
+.choice-button__clicked,
+.next-question-button__clicked,
+.play-again-button__clicked {
+    transform: translateY(2px);
+    border-bottom: 1px solid rgb(187, 185, 185);
+}
+
+.question-complete-message {
+    margin: 10px;
+    max-width: 500px;
+}
