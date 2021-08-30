@@ -1,10 +1,6 @@
 import React from "react"
 
 export default class ChoiceButton extends React.Component {
-    constructor(props) {
-        super(props)
-    }
-
     onTrigger = () => {
         this.props.parentCallback(this.props.correct)
         this.className='choice-button-clicked'
